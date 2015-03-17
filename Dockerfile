@@ -1,11 +1,8 @@
-FROM fedora:20
+FROM centos:7
 MAINTAINER Marek Goldmann <mgoldman@redhat.com>
 
-# Execute system update
-RUN yum -y update && yum clean all
-
 # Install packages necessary to run EAP
-RUN yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all
+RUN yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all
 
 # Create a user and group used to launch processes
 # The user ID 1000 is the default for the first "regular" user on Fedora/RHEL,
