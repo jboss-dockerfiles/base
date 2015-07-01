@@ -11,7 +11,7 @@ This image is used as a base image for *all* JBoss community images. It provides
 
 ### Operating system
 
-This image uses Fedora 20.
+This image uses CentOS 7.
 
 ### Working directory
 
