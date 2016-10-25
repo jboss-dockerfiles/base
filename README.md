@@ -11,7 +11,7 @@ This image is used as a base image for *all* JBoss community images. It provides
 
 ### Operating system
 
-This image uses CentOS 7.
+This image uses CentOS 7 on aarch64/arm64.
 
 ### Working directory
 
@@ -19,4 +19,4 @@ This image has the working directory set to `/opt/jboss`, which is the `jboss` u
 
 ### Availability
 
-The `Dockerfile` is available in the `master` branch and is built in the Docker HUB as `jboss/base:latest`.
+The `Dockerfile` is available in the `aarch64` branch and the docker image can be found at Docker HUB as `project31/aarch64-jboss-base:latest` (https://hub.docker.com/r/project31/aarch64-jboss-base/) - built on Pine64.

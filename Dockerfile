@@ -1,5 +1,5 @@
-FROM centos:7
-MAINTAINER Marek Goldmann <mgoldman@redhat.com>
+FROM project31/aarch64-centos:7
+MAINTAINER Kurt T Stam <kstam@redhat.com>
 
 # Install packages necessary to run EAP
 RUN yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all
