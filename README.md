@@ -20,3 +20,8 @@ This image has the working directory set to `/opt/jboss`, which is the `jboss` u
 ### Availability
 
 The `Dockerfile` is available in the `master` branch and is built in the Docker HUB as `jboss/base:latest`.
+
+### ACL Limitations
+
+The file acls used, will not work on file systems that do not support them, such as AUFS.
+Also, please ensure that your kernel has ACLs enabled (most standard distros should have this by default)
