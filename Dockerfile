@@ -1,5 +1,6 @@
 FROM centos:7
-MAINTAINER Marek Goldmann <mgoldman@redhat.com>
+LABEL maintainer.name="Marek Goldmann"\
+      maintainer.email="mgoldman@redhat.com"
 
 # Install packages necessary to run EAP
 RUN yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all
