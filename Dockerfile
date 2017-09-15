@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:7.4.1708
 MAINTAINER Marek Goldmann <mgoldman@redhat.com>
 
 # Install packages necessary to run EAP
